@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+
+<organisational-specification
+	id="groupOrg" os-version="0.8" xmlns='http://moise.sourceforge.net/os'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd'>
+
+	<structural-specification>
+
+		<role-definitions>
+			<role id="managerRole" />
+			<role id="userRole" />
+		</role-definitions>
+
+		<group-specification id="team">
+			<roles>
+				<role id="managerRole" min="1" max="1" />
+				<role id="userRole" min="1" max="15" />
+			</roles>
+		</group-specification>
+	</structural-specification>
+
+	<functional-specification>
+		<scheme id="taskScheme">
+			<goal id="fazer_desenvolvimento" ds="Complete the task"></goal>
+			
+			<mission id="missionUser" min="1" max="15">
+				<goal id="fazer_desenvolvimento" />
+			</mission>
+		</scheme>
+	</functional-specification>
+
+	<normative-specification>
+		<!-- the norms of the application -->
+		<norm id="norm1" type="obligation" role="userRole" mission="missionUser" />		
+	</normative-specification>
+
+</organisational-specification>

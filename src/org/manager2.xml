@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+
+<organisational-specification
+	id="groupOrg" os-version="0.8" xmlns='http://moise.sourceforge.net/os'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd'>
+
+	<structural-specification>
+		<role-definitions>
+			<role id="managerRole" />
+			<role id="userRole" />
+		</role-definitions>
+
+		<group-specification id="team">
+			<roles>
+				<role id="managerRole" min="1" max="1" />
+				<role id="userRole" min="1" max="20" />
+			</roles>
+		</group-specification>
+	</structural-specification>
+
+	<functional-specification>
+		<scheme id="taskScheme">
+			<goal id="concluir_Projeto" ds="Projeto JobQuest">
+				<plan operator="parallel">
+					<goal id="tarefa_1" ds="[Feature-Deslogar] O botão de deslogar deve ser retirado de todas as telas que estiver sendo utilizado e deve passar para dentro da secao da tabbar 'Mais ...'"></goal>
+					<goal id="tarefa_2" ds="[US17 - Fix] Na tela de cadastrar vagas (empresa) deve conter os campos 'Horarios'e 'Local'"></goal>
+					<goal id="tarefa_3" ds="Atualizar Wiki com os Mockups"></goal>
+					<goal id="tarefa_4" ds="[Fix] Na tela de login o botao entrar deve estar com o mesmo arredondamento do que a primeira tela"></goal>
+					<goal id="tarefa_5" ds="US03 - Validar os dados informados pelo usuário e aplicar máscaras"></goal>
+					<goal id="tarefa_6" ds="US03 - Completar campos do endereço via API"></goal>
+					<goal id="tarefa_7" ds="[Fix] Aumentar o logo na tela de cadastro rapido"></goal>
+					<goal id="tarefa_8" ds="[Fix] Ajustar cores dos botoes para preto, deve ter ser igual a tela de login"></goal>
+					<goal id="tarefa_9" ds="US03 - Carregar os dados do perfil no formulário e permitir edição"></goal>
+					<goal id="tarefa_10" ds="US03 - Carregar os dados do perfil no formulário e permitir edição"></goal>
+					<goal id="tarefa_11" ds="Testes automatizados"></goal>
+					<goal id="tarefa_12" ds="US02 - Atualizar campo faltante no back (descrição)"></goal>
+					<goal id="tarefa_13" ds="[Design]Ajustar tela de cadastrar vaga conforme o projeto atual"></goal>
+					<goal id="tarefa_14" ds="[Fix] Na tela Pesquisar Vagas Disponiveis, deve ser alinhado o titulo no formato de paragrafo a esquerda"></goal>
+					<goal id="tarefa_15" ds="US06 - Consimir api de cep para preencher os dados com base no cep"></goal>
+					<goal id="tarefa_16" ds="US02 - Na secao de minha habilidades e experiencias os dados devem ser exibidos dentro de um card"></goal>
+					<goal id="tarefa_17" ds="US02 - Deve ser formatado os campos Habilidades e Experiencias"></goal>
+					<goal id="tarefa_18" ds="US16 - Criar tela de perfil"></goal>
+					<goal id="tarefa_19" ds="US16 - Criar componentes da tela"></goal>
+					<goal id="tarefa_20" ds="US16 - Integrar tela e componentes"></goal>
+					<goal id="tarefa_21" ds="US16 - Criar endpoint GET para receber os dados da empresa"></goal>
+				</plan>
+			</goal>
+			
+			<mission id="mission_tarefa_1" min="0" max="20">
+				<goal id="tarefa_1" />
+			</mission>
+			
+			<mission id="mission_tarefa_2" min="0" max="20">
+				<goal id="tarefa_2" />
+			</mission>
+			
+			<mission id="mission_tarefa_3" min="0" max="20">
+				<goal id="tarefa_3" />
+			</mission>
+			
+			<mission id="mission_tarefa_4" min="0" max="20">
+				<goal id="tarefa_4" />
+			</mission>
+			
+			<mission id="mission_tarefa_5" min="0" max="20">
+				<goal id="tarefa_5" />
+			</mission>
+			
+			<mission id="mission_tarefa_6" min="0" max="20">
+				<goal id="tarefa_6" />
+			</mission>
+			
+			<mission id="mission_tarefa_7" min="0" max="20">
+				<goal id="tarefa_7" />
+			</mission>
+			
+			<mission id="mission_tarefa_8" min="0" max="20">
+				<goal id="tarefa_8" />
+			</mission>
+			
+			<mission id="mission_tarefa_9" min="0" max="20">
+				<goal id="tarefa_9" />
+			</mission>
+			
+			<mission id="mission_tarefa_10" min="0" max="20">
+				<goal id="tarefa_10" />
+			</mission>
+			
+			<mission id="mission_tarefa_11" min="0" max="20">
+				<goal id="tarefa_11" />
+			</mission>
+			
+			<mission id="mission_tarefa_12" min="0" max="20">
+				<goal id="tarefa_12" />
+			</mission>
+			
+			<mission id="mission_tarefa_13" min="0" max="20">
+				<goal id="tarefa_13" />
+			</mission>
+			
+			<mission id="mission_tarefa_14" min="0" max="20">
+				<goal id="tarefa_14" />
+			</mission>
+			
+			<mission id="mission_tarefa_15" min="0" max="20">
+				<goal id="tarefa_15" />
+			</mission>
+			
+			<mission id="mission_tarefa_16" min="0" max="20">
+				<goal id="tarefa_16" />
+			</mission>
+			
+			<mission id="mission_tarefa_17" min="0" max="20">
+				<goal id="tarefa_17" />
+			</mission>
+			
+			<mission id="mission_tarefa_18" min="0" max="20">
+				<goal id="tarefa_18" />
+			</mission>
+			
+			<mission id="mission_tarefa_19" min="0" max="20">
+				<goal id="tarefa_19" />
+			</mission>
+			
+			<mission id="mission_tarefa_20" min="0" max="20">
+				<goal id="tarefa_20" />
+			</mission>
+			
+			<mission id="mission_tarefa_21" min="0" max="20">
+				<goal id="tarefa_21" />
+			</mission>
+		</scheme>
+	</functional-specification>
+	<normative-specification>
+		<properties>
+			<property id="mission_permission" value="ignore"/>
+			<property id="mission_left" value="ignore"/>
+		</properties>		
+	</normative-specification>
+
+</organisational-specification>

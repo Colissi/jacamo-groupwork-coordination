@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+
+<organisational-specification
+	id="groupOrg" os-version="0.8" xmlns='http://moise.sourceforge.net/os'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd'>
+
+	<structural-specification>
+		<role-definitions>
+			<role id="managerRole" />
+			<role id="userRole" />
+		</role-definitions>
+
+		<group-specification id="team">
+			<roles>
+				<role id="managerRole" min="1" max="1" />
+				<role id="userRole" min="1" max="20" />
+			</roles>
+		</group-specification>
+	</structural-specification>
+
+	<functional-specification>
+		<scheme id="taskScheme">
+			<goal id="concluir_Projeto" ds="Projeto Cupertino">
+				<plan operator="parallel">
+					<goal id="tarefa_1" ds="Importar as fotos do celular do usuário automaticamente"></goal>
+					<goal id="tarefa_2" ds="Adicionar descrições às fotos"></goal>
+					<goal id="tarefa_3" ds="Corrigir bug da navegação no Apagar fotos"></goal>
+					<goal id="tarefa_4" ds="26 - Compartilhar fotos com colegas"></goal>
+					<goal id="tarefa_5" ds="33 - Apagar disciplina (e suas fotos)"></goal>
+					<goal id="tarefa_6" ds="36 - Editar grade"></goal>
+					<goal id="tarefa_7" ds="Adicionar setas que indicam se a disciplina está colapsada ou expandida"></goal>
+					<goal id="tarefa_8" ds="Criar classes para padronizar chamadas ao Firebase"></goal>
+					<goal id="tarefa_9" ds="39 - Reconhecimento ótico de caracteres (OCR)"></goal>
+				</plan>
+			</goal>
+			
+			<mission id="mission_tarefa_1" min="0" max="20">
+				<goal id="tarefa_1" />
+			</mission>
+			
+			<mission id="mission_tarefa_2" min="0" max="20">
+				<goal id="tarefa_2" />
+			</mission>
+			
+			<mission id="mission_tarefa_3" min="0" max="20">
+				<goal id="tarefa_3" />
+			</mission>
+			
+			<mission id="mission_tarefa_4" min="0" max="20">
+				<goal id="tarefa_4" />
+			</mission>
+			
+			<mission id="mission_tarefa_5" min="0" max="20">
+				<goal id="tarefa_5" />
+			</mission>
+			
+			<mission id="mission_tarefa_6" min="0" max="20">
+				<goal id="tarefa_6" />
+			</mission>
+			
+			<mission id="mission_tarefa_7" min="0" max="20">
+				<goal id="tarefa_7" />
+			</mission>
+			
+			<mission id="mission_tarefa_8" min="0" max="20">
+				<goal id="tarefa_8" />
+			</mission>
+			
+			<mission id="mission_tarefa_9" min="0" max="20">
+				<goal id="tarefa_9" />
+			</mission>
+		</scheme>
+	</functional-specification>
+	<normative-specification>
+		<properties>
+			<property id="mission_permission" value="ignore"/>
+			<property id="mission_left" value="ignore"/>
+		</properties>		
+	</normative-specification>
+
+</organisational-specification>

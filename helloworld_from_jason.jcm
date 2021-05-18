@@ -1,0 +1,24 @@
+
+mas helloworld_from_jason {
+
+    agent chatbot: chatbot.asl {
+    	focus: integration
+    	focus: chatbotControl
+    }
+    
+	workspace wp {
+		artifact integration:br.pucrs.smart.IntegrationArtifact
+	}
+	
+	workspace wpChatbot {
+		artifact chatbotControl: board.Group
+	}
+	
+	organisation marcelo_neves_manager: manager.xml {}
+	
+	organisation azriel_majdenbaum_manager: manager2.xml {}
+	
+	platform: br.pucrs.smart.RestArtifact("--main 2181 --restPort 8080")
+
+}
+
